@@ -544,8 +544,74 @@ button {
 }
 
 /*=============== BLOG ===============*/
+.blog__container{
+  padding-bottom: 2rem;
+}
 
+.blog__content{
+  row-gap: 3rem;
+}
 
+.blog__image{
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.blog-img{
+  border-radius: .5rem;
+}
+
+.blog__button{
+  display: inline-flex;
+  background-color: #fff;
+  padding: 1.15rem;
+  border-radius: .5rem 0 .5rem 0;
+  font-size: 2rem;
+  color: var(--title-color);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.blog__button i{
+  transform: rotate(-30deg);
+  transition: .4s;
+}
+
+.blog__button:hover i{
+  transform: rotate(-30deg) translateX(.25rem);
+}
+
+.blog__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: .75rem;
+}
+
+.blog__description{
+  margin-bottom: 1.5rem;
+}
+
+.blog__footer,
+.blog__reaction{
+  display: flex;
+  align-items: center;
+}
+
+.blog__footer{
+  column-gap: 1.5rem;
+}
+
+.blog__reaction{
+  column-gap: .25rem;
+}
+
+.blog__reaction i{
+  font-size: 1.25rem;
+}
+
+.blog__reaction span{
+  font-size: var(--small-font-size);
+}
 /*=============== FOOTER ===============*/
 
 
