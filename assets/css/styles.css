@@ -519,7 +519,29 @@ button {
   transform: translateX(.25rem);
 }
 /*=============== LOGOS ===============*/
+.logo{
+  background-color: #fff;
+}
 
+.logo__conteiner{
+  grid-template-columns: repeat(3 , 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem 2rem;
+  border-top: 1px solid var(--text-color-light);
+  padding-top: 2.5rem;
+}
+
+.logo__img{
+  width: 80px;
+  mix-blend-mode: luminosity;
+  opacity: .4;
+  transition: .4s;
+}
+
+.logo__img:hover{
+  opacity: .8;
+}
 
 /*=============== BLOG ===============*/
 
