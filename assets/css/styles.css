@@ -440,8 +440,84 @@ button {
 }
 
 /*=============== QUALITY ===============*/
+.quality{
+  background-color: #fff;
+}
 
+.quality__content{
+  row-gap: 2.5rem;
+}
 
+.quality__images{
+  position: relative;
+  justify-self: center;
+}
+
+.quality__img-big,
+.quality__img-small{
+  border-radius: .5rem;
+}
+
+.quality__img-big{
+  width: 280px;
+}
+
+.quality__img-small{
+  width: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  transform: translateX(-5rem);
+}
+
+.quality__title,
+.quality__price{
+  font-size: var(--h1-font-size);
+}
+
+.quality__title{
+  margin-bottom: .75rem;
+}
+
+.quality__price{
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: .75rem;
+}
+.quality__special{
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: .75rem;
+}
+
+.quality__description{
+  margin-bottom: 2.5rem;
+}
+
+.quality__buttons{
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.quality__button{
+  font-size: var(--normal-font-size);
+  text-transform: uppercase;
+  color: var(--title-color);
+  display: inline-flex;
+  align-items: center;
+  column-gap: .75rem;
+}
+
+.quality__button i{
+  font-size: 1.25rem;
+  transition: .4s;
+}
+
+.quality__button:hover i{
+  transform: translateX(.25rem);
+}
 /*=============== LOGOS ===============*/
 
 
