@@ -304,10 +304,47 @@ button {
 }
 
 /*=============== BUTTON ===============*/
-
+.button{
+  display: inline-block;
+  background-color: var(--black-color);
+  color: #fff;
+  padding: 1rem 1.75rem;
+  border-radius: .25rem;
+  font-size: var(--normal-font-size);
+  text-transform: uppercase;
+}
 
 /*=============== SPECIALTY ===============*/
+.spaceialty__button{
+  margin-left: 1.25rem;
+}
 
+.spaceialty__category{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 200px;
+  justify-content: center;
+  row-gap: 2.5rem;
+}
+
+.spaceialty__img{
+  width: 60px;
+  margin-bottom: 1rem;
+  transition: .4s;
+}
+
+.spaceialty__group{
+  text-align: center;
+}
+
+.spaceialty__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: .25rem;
+}
+
+.spaceialty__group:hover .spaceialty__img{
+  transform: translateY(-.25rem);
+}
 
 /*=============== PRODUCTS ===============*/
 
