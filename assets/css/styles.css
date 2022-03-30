@@ -315,11 +315,11 @@ button {
 }
 
 /*=============== SPECIALTY ===============*/
-.spaceialty__button{
+.specialty__button{
   margin-left: 1.25rem;
 }
 
-.spaceialty__category{
+.specialty__category{
   margin-top: 4rem;
   display: grid;
   grid-template-columns: 200px;
@@ -327,30 +327,117 @@ button {
   row-gap: 2.5rem;
 }
 
-.spaceialty__img{
+.specialty__img{
   width: 60px;
   margin-bottom: 1rem;
   transition: .4s;
 }
 
-.spaceialty__group{
+.specialty__group{
   text-align: center;
 }
 
-.spaceialty__title{
+.specialty__title{
   font-size: var(--h2-font-size);
   margin-bottom: .25rem;
 }
 
-.spaceialty__group:hover .spaceialty__img{
+.specialty__group:hover .specialty__img{
   transform: translateY(-.25rem);
 }
 
 /*=============== PRODUCTS ===============*/
+.products__filters{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 2rem;
+  margin-bottom: 3.5rem;
+}
 
+.products__line{
+  position: relative;
+}
+
+.products__line::before{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 40px;
+  background-color: var(--text-color-light);
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.products__item{
+  cursor: pointer;
+}
+
+.products__title{
+  font-size: var(--h3-font-size);
+  color: var(--text-color);
+  margin-bottom: .5rem;
+}
+
+.products__stock{
+  font-size: var(--small-font-size);
+}
+
+.products__content{
+  grid-template-columns: 200px;
+  justify-content: center;
+}
+
+.products__card{
+  background-color: var(--container-color);
+  border-radius: .5rem;
+}
+
+.products__img{
+  width: 150px;
+  transition: .4s;
+}
+
+.products__shape{
+  background-color: var(--card-color);
+  border-radius: .5rem .5rem 0 0;
+  text-align: center;
+  padding: .25rem 0;
+}
+
+.products__data{
+  padding: 1rem 0 1.25rem 1rem;
+  position: relative;
+}
+
+.products__price{
+  font-size: var(--h2-font-size);
+}
+
+.products__name{
+  font-size: var(--normal-font-size);
+}
+
+.products__botton{
+  border-radius: 50%;
+  padding: .625rem;
+  display: inline-flex;
+  font-size: 1.25rem;
+  position: absolute;
+  right: 1rem;
+  top: -1.25rem;
+  box-shadow: 0 4px 12px hsla(206, 4%, 4%, .2);
+}
+
+.products__card:hover .products__img{
+  transform: translateY(-.25rem);
+}
 
 /* Active link products */
-
+.active-products .products__title{
+  color: var(--title-color);
+}
 
 /*=============== QUALITY ===============*/
 
