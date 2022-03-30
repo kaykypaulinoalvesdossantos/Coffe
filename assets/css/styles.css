@@ -613,8 +613,96 @@ button {
   font-size: var(--small-font-size);
 }
 /*=============== FOOTER ===============*/
+.footer{
+  background-color: var(--black-color);
+  padding: 4rem 0 2.5rem;
+}
+
+.footer__title{
+  color: #fff;
+  font-size: var(--h1-font-size);
+  margin-bottom: 2rem;
+}
+
+.footer__description{
+  margin-bottom: .75rem;
+}
+
+.footer__newsletter{
+  display: flex;
+  column-gap: .5rem;
+}
+
+.footer__input{
+  border: none;
+  outline: none;
+  padding: 1.25rem 1rem;
+  border-radius: .25rem;
+  width: 78%;
+  color: var(--text-color);
+}
+
+.footer__button{
+  padding: .75rem;
+  font-size: 2rem;
+  border-radius: .25rem;
+  display: inline-block;
+  background-color: var(--first-color);
+}
+
+.footer__button i{
+  transform: rotate(-38deg);
+  transition: .4s;
+}
+
+.footer__button:hover i{
+  transform: rotate(-38deg) translate(.25rem);
+}
 
 
+.footer__content{
+  row-gap: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.footer__subtitle{
+  color: #fff;
+  font-size: var(--h2-font-size);
+  margin-bottom: .75rem;
+}
+
+.footer__flag{
+  width: 1rem;
+}
+
+.footer__group{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.footer__social{
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.footer__social-link{
+  color: #fff;
+  transition: .4s;
+}
+
+.footer__social-link:hover{
+  color: var(--first-color);
+}
+
+.footer__copy{
+  font-size: var(--smaller-font-size);
+}
 /*=============== SCROLL BAR ===============*/
 
 
