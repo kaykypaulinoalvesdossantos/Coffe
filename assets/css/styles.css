@@ -845,9 +845,7 @@ button {
   }
 
   .home__scroll{
-      bottom: 0;
-    top: 0;
-    margin: auto;
+    display: none;
   }
 
   .products__filters{
@@ -859,6 +857,7 @@ button {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
+  
 }
 
 /* For large devices */
@@ -1054,12 +1053,12 @@ button {
   position:fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: hsl(0, 0, 99%);
+  width: 100%;
+  height: 100%;
+  background-color: white;
   display: grid;
   place-items: center;
-  z-index: 100000;
+  z-index: 1000;
 }
 
 
