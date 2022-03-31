@@ -800,7 +800,7 @@ button {
   }
 
   .nav__list{
-    padding: 0;
+    padding-top: 0;
     flex-direction: row;
     column-gap: 4rem;
   }
@@ -816,7 +816,7 @@ button {
     width: 1px;
     height: 12px;
     background-color: var(--text-color-light);
-    transform: translate(1.25rem);
+    transform: translateX(1.25rem);
     top: 0;
     bottom: 0;
     margin: auto 0;
@@ -827,7 +827,7 @@ button {
   }
 
   .scroll-header .active-link{
-  color: --title-color;
+  color: var(--title-color);
   }
 
   .scroll-header .active-link::after{
@@ -845,17 +845,13 @@ button {
   }
 
   .home__scroll{
-    bottom: 0;
+      bottom: 0;
     top: 0;
     margin: auto;
   }
 
   .products__filters{
     grid-template-columns: repeat(3, 200px);
-  }
-
-  .quality__content{
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .quality__content,
@@ -933,7 +929,7 @@ button {
     border-radius: .75rem;
   }
   .products__img{
-    width: 288px;
+    width: 200px;
   }
 
   .products__shape{
@@ -1054,8 +1050,22 @@ button {
 }
 
 /*=============== LOAD ===============*/
+.load{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 0, 99%);
+  display: grid;
+  place-items: center;
+  z-index: 100000;
+}
 
 
 /* The size may vary depending 
 on the image of the gif */
 
+.load__gif{
+  width: 210px;
+}
